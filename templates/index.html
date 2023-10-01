@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <title>My APP</title>
+</head>
+<body>
+    {% for value in content  %}
+        <p>{{ value }} </p>
+    {% endfor %}
+
+    <script src="{{url_for('static', filename='script.js')}}"></script>
+</body>
+</html>
